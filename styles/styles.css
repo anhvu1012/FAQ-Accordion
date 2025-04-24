@@ -41,13 +41,13 @@ main section header {
   align-items: center;
   column-gap: 20px;
 }
-main section header h4 {
+main section header h2 {
   margin: 0;
   font-weight: 600;
   color: hsl(292, 42%, 14%);
   font-size: 1em;
 }
-main section header h4:hover {
+main section header h2:hover {
   cursor: pointer;
   color: hsl(281, 83%, 54%);
 }
@@ -87,7 +87,7 @@ main hr {
   main header h1 {
     font-size: 3em;
   }
-  main section header h4 {
+  main section header h2 {
     font-size: 1.13em;
   }
   main section p {
