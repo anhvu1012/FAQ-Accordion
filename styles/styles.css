@@ -1,3 +1,73 @@
 body {
+  padding: 0;
+  margin: 0;
   font-family: "Work Sans", sans-serif;
+  background-image: url("../assets/images/background-pattern-mobile.svg");
+  background-color: hsl(275, 100%, 97%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin: auto 25px;
+  padding: 25px;
+  max-width: 550px;
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 8px;
+}
+main > header {
+  display: flex;
+  column-gap: 25px;
+}
+main > header img {
+  width: 23px;
+}
+main > header h1 {
+  margin: 0;
+  color: hsl(292, 42%, 14%);
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  margin-block: 23px;
+}
+main section header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+main section header h4 {
+  margin: 0;
+  font-weight: 600;
+  color: hsl(292, 42%, 14%);
+  font-size: 16px;
+}
+main section p {
+  display: none;
+  color: hsl(292, 16%, 49%);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  margin-right: 10px;
+}
+main > section:last-child {
+  margin-bottom: 0;
+}
+main hr {
+  border: none;
+  height: 0.1px;
+  background-color: hsl(275, 100%, 97%);
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -6,5 +6,86 @@ $purple-600: hsl(292, 16%, 49%);
 $purple-950: hsl(292, 42%, 14%);
 
 body {
+  padding: 0;
+  margin: 0;
   font-family: $font;
+  background-image: url('../assets/images/background-pattern-mobile.svg');
+  background-color: $purple-100;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+  margin: auto 25px;
+  padding: 25px;
+  max-width: 550px;
+  background-color: $white;
+  border-radius: 8px;
+
+  &>header{
+    display: flex;
+    column-gap: 25px;
+
+    img{
+      width: 23px;
+    }
+
+    h1{
+      margin: 0;
+      color: $purple-950;
+    }
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    margin-block: 23px;
+
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 20px;
+
+      h4{
+        margin: 0;
+        font-weight: 600;
+        color: $purple-950;
+        font-size: 16px;
+      }
+    }
+
+    p{
+      display: none;
+      color: $purple-600;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
+
+  &>section:last-child{
+    margin-bottom: 0;
+  }
+
+  hr{
+    border: none;
+    height: 0.1px;
+    background-color: $purple-100;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body{
+    background-image: url('../assets/images/background-pattern-desktop.svg');
+  }
+
 }
